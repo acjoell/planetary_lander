@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Planetary Lander | Summary</title>
+
+	<!-- Mario Bross font -->
+	<link href="http://fonts.cdnfonts.com/css/super-mario-bros-alphabet" rel="stylesheet">
+	<!-- tailwind -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- Global css (secundary pages)-->
+	<link rel="stylesheet" href="./global.css">
+
+</head>
+<body class="container">
+
+	<!-- Content -->
+	<section class="w-full px-6 pb-12 antialiased">
+		<div class="mx-auto max-w-7xl">
+
+			<!-- Navbar -->
+			<nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
+				<div class="relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium md:overflow-visible lg:justify-center sm:px-4 md:px-2">
+					<div class="flex items-center justify-start w-1/4 h-full pr-4">
+						<a href="./index.html" class="inline-block py-4 md:py-0">
+							<span class="p-1 text-xl font-black leading-none text-white"><span>ARGENTO</span></span>
+						</a>
+					</div>
+					<div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
+						<div class="flex-col w-full h-auto overflow-hidden bg-transparent rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
+							<p href="./index.html" class="inline-flex items-center block w-auto h-16 px-6 text-xl font-black leading-none text-white md:hidden"><p>
+							<div class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+								<a href="./index.html" class="inline-block w-full py-2 mx-0 text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Home</a>
+								<a href="./summary.html" class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-indigo-600 hover:text-indigo-800 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Summary</a>
+								<a href="./source.html" class="inline-block w-full py-2 mx-0 text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Sources</a>
+								<a href="./team.html" class="inline-block w-full py-2 mx-0 text-left text-white md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Team</a>
+							</div>
+							<div class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
+								<a href="./game.html" class="inline-flex items-center w-full px-6 py-3 text-sm font-medium leading-4 text-white bg-indigo-500 md:px-3 md:w-auto md:rounded-full lg:px-5 hover:bg-indigo-700 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-white border-2 border-white">Play now</a>
+							</div>
+						</div>
+					</div>
+					<div @click="showMenu = !showMenu" class="absolute right-0 flex flex-col items-center items-end justify-center w-10 h-10 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100">
+						<svg class="w-6 h-6 text-gray-700" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" x-cloak="">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+						<svg class="w-6 h-6 text-gray-700" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Content Summary -->
+			<section class="sm:py-12 md:py-16 lg:py-24 ">
+				<div class="max-w-6xl px-4 px-10 mx-auto lg:px-12">
+					<div class="flex flex-col items-start lg:items-center lg:flex-row">
+						<div class="box-border flex-1 text-center sm:text-left">
+							<h2 class="m-0 text-4xl font-semibold leading-tight tracking-tight text-left text-indigo-700 border-0 border-gray-200 sm:text-5xl">
+								Summary
+							</h2>
+							<p class="mt-4 text-xl text-left text-white border-0 border-gray-200 sm:text-2xl">
+								NASA’s near-term space exploration plans include returning to the Moon and future plans include landing a crew on Mars. Your challenge is to create an inspiring and educational video game or interactive 3D model to simulate a landing on the Moon or Mars!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Section 1 -->
+			<section class="w-full pt-7 pb-7 md:pt-20 md:pb-24">
+				<!-- Background -->
+				<div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+
+					<!-- Image -->
+					<div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+						<img src="../assets/perseverance.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20 ">
+					</div>
+
+					<!-- Content -->
+					<div class="box-border order-first w-full text-indigo-700 border-solid md:w-1/2 md:pl-10 md:order-none">
+						<h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+							Background
+						</h2>
+						<p class="pt-4 pb-8 m-0 leading-7 text-white border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">
+							NASA’s near-term space exploration plans include returning to the Moon and future plans include landing a crew on Mars. The Agency supports efforts to inform and educate the public about these important endeavors. Publicly available information about NASA's Artemis Program and the Apollo Lunar Excursion Module can provide data required to address this challenge, including information that will inspire the public to learn more about the NASA Artemis program and NASA history.
+						</p>
+					</div>
+					<!-- End  Content -->
+				</div>
+				<!-- Objectives -->
+				<div class="box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+					<!-- Content -->
+					<div class="box-border w-full text-indigo-700 border-solid md:w-1/2 md:pl-6 xl:pl-32">
+						<h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+							Objectives
+						</h2>
+						<p class="pt-4 pb-8 m-0 leading-7 text-white border-0 border-gray-300 sm:pr-10 lg:text-lg">
+							Your challenge is to create an inspiring and educational video game web application or interactive 3D model to simulate a landing on the Moon or Mars! When developing the video game or 3D model, think about how it could educate or inspire the player.
+							Products from this challenge should be deployed as web pages that include embedded web apps. The web page may provide instructions on how to use the web app.
+							If you reuse free open-source assets or content released under a Creative Commons license (such as artwork, models, code bases, or textures), comply with all appropriate requirements.
+						</p>
+					</div>
+					<!-- End  Content -->
+
+					<!-- Image -->
+					<div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+						<img src="../assets/rocket.png" class="pl-4 sm:pr-10 xl:pl-10 lg:pr-32">
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+	<!-- Alpine es para el toogle button -->
+	<script src="//unpkg.com/alpinejs" defer></script> 
+</body>
+</html>
